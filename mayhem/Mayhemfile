@@ -1,0 +1,9 @@
+# libFuzzer target over the WebAssembly parser/loader (upstream platforms/app_fuzz/fuzzer.c),
+# compiled with -fsanitize=fuzzer against a sanitizer+coverage-instrumented libm3. Preserves the
+# legacy `fuzzer` Mayhem target name. `libfuzzer: true` is mandatory (else Mayhem starts 0 workers).
+project: wasm3
+target: fuzzer
+
+cmds:
+  - cmd: /mayhem/fuzzer
+    libfuzzer: true

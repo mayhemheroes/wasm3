@@ -1,0 +1,2 @@
+# BuildKit override for `docker build -f mayhem/Dockerfile`: exclude nothing — the commit
+# image must keep the FULL source tree including .git history.
